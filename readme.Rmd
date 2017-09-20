@@ -1,0 +1,36 @@
+---
+title: "readme"
+author: "Andrew Barr"
+date: "9/19/2017"
+output: 
+  html_document:
+    keep_md: true
+---
+
+```{r message=F, warning=F}
+devtools::install_github("wabarr/simulateSpatialData")
+library(simulateSpatialData)
+```
+
+## some examples
+```{r message=F, warning=F}
+makeWorld(range=1)
+makeWorld(range=1)
+makeWorld(range=1)
+
+makeWorld(range=2)
+makeWorld(range=2)
+makeWorld(range=2)
+
+makeWorld(range=3)
+makeWorld(range=3)
+makeWorld(range=3)
+
+makeWorld(range=4)
+makeWorld(range=4)
+makeWorld(range=4)
+
+makeWorld(range=5)
+makeWorld(range=5)
+makeWorld(range=5)
+```
