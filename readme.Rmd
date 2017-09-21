@@ -14,23 +14,9 @@ library(simulateSpatialData)
 
 ## some examples
 ```{r message=F, warning=F}
-makeWorld(range=1)
-makeWorld(range=1)
-makeWorld(range=1)
-
-makeWorld(range=2)
-makeWorld(range=2)
-makeWorld(range=2)
-
-makeWorld(range=3)
-makeWorld(range=3)
-makeWorld(range=3)
-
-makeWorld(range=4)
-makeWorld(range=4)
-makeWorld(range=4)
-
-makeWorld(range=5)
-makeWorld(range=5)
-makeWorld(range=5)
+invisible(
+  lapply(sort(rep(1:10,4)), function(x){
+  makeWorld(range=x)
+})
+)
 ```

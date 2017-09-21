@@ -11,7 +11,11 @@ library(simulateSpatialData)
 ## some examples
 
 ```r
-makeWorld(range=1)
+invisible(
+  lapply(sort(rep(1:10,4)), function(x){
+  makeWorld(range=x)
+})
+)
 ```
 
 ```
@@ -20,19 +24,11 @@ makeWorld(range=1)
 
 ![](readme_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
 
-```r
-makeWorld(range=1)
-```
-
 ```
 ## [using unconditional Gaussian simulation]
 ```
 
 ![](readme_files/figure-html/unnamed-chunk-2-2.png)<!-- -->
-
-```r
-makeWorld(range=1)
-```
 
 ```
 ## [using unconditional Gaussian simulation]
@@ -40,19 +36,11 @@ makeWorld(range=1)
 
 ![](readme_files/figure-html/unnamed-chunk-2-3.png)<!-- -->
 
-```r
-makeWorld(range=2)
-```
-
 ```
 ## [using unconditional Gaussian simulation]
 ```
 
 ![](readme_files/figure-html/unnamed-chunk-2-4.png)<!-- -->
-
-```r
-makeWorld(range=2)
-```
 
 ```
 ## [using unconditional Gaussian simulation]
@@ -60,19 +48,11 @@ makeWorld(range=2)
 
 ![](readme_files/figure-html/unnamed-chunk-2-5.png)<!-- -->
 
-```r
-makeWorld(range=2)
-```
-
 ```
 ## [using unconditional Gaussian simulation]
 ```
 
 ![](readme_files/figure-html/unnamed-chunk-2-6.png)<!-- -->
-
-```r
-makeWorld(range=3)
-```
 
 ```
 ## [using unconditional Gaussian simulation]
@@ -80,19 +60,11 @@ makeWorld(range=3)
 
 ![](readme_files/figure-html/unnamed-chunk-2-7.png)<!-- -->
 
-```r
-makeWorld(range=3)
-```
-
 ```
 ## [using unconditional Gaussian simulation]
 ```
 
 ![](readme_files/figure-html/unnamed-chunk-2-8.png)<!-- -->
-
-```r
-makeWorld(range=3)
-```
 
 ```
 ## [using unconditional Gaussian simulation]
@@ -100,19 +72,11 @@ makeWorld(range=3)
 
 ![](readme_files/figure-html/unnamed-chunk-2-9.png)<!-- -->
 
-```r
-makeWorld(range=4)
-```
-
 ```
 ## [using unconditional Gaussian simulation]
 ```
 
 ![](readme_files/figure-html/unnamed-chunk-2-10.png)<!-- -->
-
-```r
-makeWorld(range=4)
-```
 
 ```
 ## [using unconditional Gaussian simulation]
@@ -120,19 +84,11 @@ makeWorld(range=4)
 
 ![](readme_files/figure-html/unnamed-chunk-2-11.png)<!-- -->
 
-```r
-makeWorld(range=4)
-```
-
 ```
 ## [using unconditional Gaussian simulation]
 ```
 
 ![](readme_files/figure-html/unnamed-chunk-2-12.png)<!-- -->
-
-```r
-makeWorld(range=5)
-```
 
 ```
 ## [using unconditional Gaussian simulation]
@@ -140,22 +96,164 @@ makeWorld(range=5)
 
 ![](readme_files/figure-html/unnamed-chunk-2-13.png)<!-- -->
 
-```r
-makeWorld(range=5)
-```
-
 ```
 ## [using unconditional Gaussian simulation]
 ```
 
 ![](readme_files/figure-html/unnamed-chunk-2-14.png)<!-- -->
 
-```r
-makeWorld(range=5)
-```
-
 ```
 ## [using unconditional Gaussian simulation]
 ```
 
 ![](readme_files/figure-html/unnamed-chunk-2-15.png)<!-- -->
+
+```
+## [using unconditional Gaussian simulation]
+```
+
+![](readme_files/figure-html/unnamed-chunk-2-16.png)<!-- -->
+
+```
+## [using unconditional Gaussian simulation]
+```
+
+![](readme_files/figure-html/unnamed-chunk-2-17.png)<!-- -->
+
+```
+## [using unconditional Gaussian simulation]
+```
+
+![](readme_files/figure-html/unnamed-chunk-2-18.png)<!-- -->
+
+```
+## [using unconditional Gaussian simulation]
+```
+
+![](readme_files/figure-html/unnamed-chunk-2-19.png)<!-- -->
+
+```
+## [using unconditional Gaussian simulation]
+```
+
+![](readme_files/figure-html/unnamed-chunk-2-20.png)<!-- -->
+
+```
+## [using unconditional Gaussian simulation]
+```
+
+![](readme_files/figure-html/unnamed-chunk-2-21.png)<!-- -->
+
+```
+## [using unconditional Gaussian simulation]
+```
+
+![](readme_files/figure-html/unnamed-chunk-2-22.png)<!-- -->
+
+```
+## [using unconditional Gaussian simulation]
+```
+
+![](readme_files/figure-html/unnamed-chunk-2-23.png)<!-- -->
+
+```
+## [using unconditional Gaussian simulation]
+```
+
+![](readme_files/figure-html/unnamed-chunk-2-24.png)<!-- -->
+
+```
+## [using unconditional Gaussian simulation]
+```
+
+![](readme_files/figure-html/unnamed-chunk-2-25.png)<!-- -->
+
+```
+## [using unconditional Gaussian simulation]
+```
+
+![](readme_files/figure-html/unnamed-chunk-2-26.png)<!-- -->
+
+```
+## [using unconditional Gaussian simulation]
+```
+
+![](readme_files/figure-html/unnamed-chunk-2-27.png)<!-- -->
+
+```
+## [using unconditional Gaussian simulation]
+```
+
+![](readme_files/figure-html/unnamed-chunk-2-28.png)<!-- -->
+
+```
+## [using unconditional Gaussian simulation]
+```
+
+![](readme_files/figure-html/unnamed-chunk-2-29.png)<!-- -->
+
+```
+## [using unconditional Gaussian simulation]
+```
+
+![](readme_files/figure-html/unnamed-chunk-2-30.png)<!-- -->
+
+```
+## [using unconditional Gaussian simulation]
+```
+
+![](readme_files/figure-html/unnamed-chunk-2-31.png)<!-- -->
+
+```
+## [using unconditional Gaussian simulation]
+```
+
+![](readme_files/figure-html/unnamed-chunk-2-32.png)<!-- -->
+
+```
+## [using unconditional Gaussian simulation]
+```
+
+![](readme_files/figure-html/unnamed-chunk-2-33.png)<!-- -->
+
+```
+## [using unconditional Gaussian simulation]
+```
+
+![](readme_files/figure-html/unnamed-chunk-2-34.png)<!-- -->
+
+```
+## [using unconditional Gaussian simulation]
+```
+
+![](readme_files/figure-html/unnamed-chunk-2-35.png)<!-- -->
+
+```
+## [using unconditional Gaussian simulation]
+```
+
+![](readme_files/figure-html/unnamed-chunk-2-36.png)<!-- -->
+
+```
+## [using unconditional Gaussian simulation]
+```
+
+![](readme_files/figure-html/unnamed-chunk-2-37.png)<!-- -->
+
+```
+## [using unconditional Gaussian simulation]
+```
+
+![](readme_files/figure-html/unnamed-chunk-2-38.png)<!-- -->
+
+```
+## [using unconditional Gaussian simulation]
+```
+
+![](readme_files/figure-html/unnamed-chunk-2-39.png)<!-- -->
+
+```
+## [using unconditional Gaussian simulation]
+```
+
+![](readme_files/figure-html/unnamed-chunk-2-40.png)<!-- -->
