@@ -4,19 +4,24 @@
 \alias{makeWorld}
 \title{Make world}
 \usage{
-makeWorld(size = 100, range = 5, nclasses = 2,
-  habitatColors = c("#fff200", "#1db125"), returnDF = FALSE, main = NULL)
+makeWorld(size = 50, range = 5, discrete = TRUE, nclasses = 2,
+  habitatColors = c("#003d29", "#cac958"), plot = FALSE, returnDF = TRUE,
+  main = NULL)
 }
 \arguments{
-\item{size}{how big should each side of the the square world be in pixels?}
+\item{size}{Integer. How big should each side of the the square world be in pixels?}
 
-\item{range}{how spatially autocorrelated do you want the data?  Higher values are more coarsely autocorrelated.}
+\item{range}{Integer. How spatially autocorrelated do you want the data?  Higher values are more coarsely autocorrelated.}
 
-\item{nclasses}{how many classes (e.g. habitats) do you want to produce?}
+\item{discrete}{Logical. Should the values of cells in the world be discrete? If set to \code{FALSE} then continuous values are returned.}
 
-\item{habitatColors}{a vector of colors for the plot}
+\item{nclasses}{Integer. How many classes (e.g. habitats) do you want to produce? This is ignored if \code{discrete=FALSE}.}
 
-\item{returnDF}{do you want to return the dataframe with the raw variables or not?}
+\item{habitatColors}{Character vector of colors for the plot}
+
+\item{plot}{Logical Should the resulting plot of the world be printed? The plot is not returned in any case.}
+
+\item{returnDF}{Logical. Do you want to return the dataframe with the raw variables or not? Default is TRUE.}
 
 \item{main}{a title for the plot}
 }
