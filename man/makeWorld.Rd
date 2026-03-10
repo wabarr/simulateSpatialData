@@ -4,9 +4,19 @@
 \alias{makeWorld}
 \title{Make world}
 \usage{
-makeWorld(size = 50, range = 5, discrete = TRUE, nclasses = 2,
-  habitatColors = c("#003d29", "#cac958"), plot = FALSE, returnDF = TRUE,
-  main = NULL)
+makeWorld(
+  size = 50,
+  range = 5,
+  discrete = TRUE,
+  nclasses = 2,
+  habitatColors = c("#003d29", "#cac958"),
+  plot = FALSE,
+  returnDF = TRUE,
+  main = NULL,
+  writeNetlogoImportFile = TRUE,
+  NetlogoImportFilePath = "~/Desktop",
+  NetlogoImportFilename = "world.txt"
+)
 }
 \arguments{
 \item{size}{Integer. How big should each side of the the square world be in pixels?}
@@ -24,6 +34,12 @@ makeWorld(size = 50, range = 5, discrete = TRUE, nclasses = 2,
 \item{returnDF}{Logical. Do you want to return the dataframe with the raw variables or not? Default is TRUE.}
 
 \item{main}{a title for the plot}
+
+\item{writeNetlogoImportFile}{Logical. Should the function write out a minimal Netlogo Import file?}
+
+\item{NetlogoImportFilePath}{Character. path of file to write.}
+
+\item{NetlogoImportFilename}{Character. name of file to write}
 }
 \description{
 Make world
