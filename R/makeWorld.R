@@ -9,16 +9,16 @@
 #' @param returnDF Logical. Do you want to return the dataframe with the raw variables or not? Default is TRUE.
 #' @param main a title for the plot
 #' @param writeNetlogoImportFile Logical. Should the function write out a minimal Netlogo Import file?
-#' @param NetlogoImportFilePath Character. path of file to write. 
+#' @param NetlogoImportFilePath Character. path of file to write.
 #' @param NetlogoImportFilename Character. name of file to write
 #'
-makeWorld <- function(size=50, 
-                      range=5, 
-                      discrete=TRUE, 
-                      nclasses=2, 
-                      habitatColors = c("#003d29","#cac958"), 
-                      plot=FALSE, 
-                      returnDF=TRUE, 
+makeWorld <- function(size=50,
+                      range=5,
+                      discrete=TRUE,
+                      nclasses=2,
+                      habitatColors = c("#003d29","#cac958"),
+                      plot=FALSE,
+                      returnDF=TRUE,
                       main=NULL,
                       writeNetlogoImportFile=TRUE,
                       NetlogoImportFilePath="~/Desktop",
@@ -63,11 +63,11 @@ makeWorld <- function(size=50,
     if(missing(main)) thePlot <- thePlot + labs(title=sprintf("%dx%d world, range=%d",size,size,range))
     print(thePlot)
   }
-  
+
   yy$pcolor<-rescale(yy$`resource-value`, to=c(52,58))
   yy$plabel<-NA
   yy$`plabel-color`<-NA
-  
+
    if(writeNetlogoImportFile){
      f <- file(paste(NetlogoImportFilePath,NetlogoImportFilename,sep="/"), open = "w")
      writeLines('"GLOBALS"', con=f)
@@ -78,12 +78,12 @@ makeWorld <- function(size=50,
 ', con=f)
      writeLines('"PATCHES"', con=f)
      writeLines('"pxcor","pycor","resource-value","pcolor","plabel","plabel-color"')
-     write.table(yy,file=f, append=TRUE, row.names=FALSE, sep=",",na="")
-     
+     write.table(yy,file=f, row.names=FALSE, sep=",",na="")
+
      writeLines('"LINKS"', con=f)
      writeLines('"end1","end2","color","label","label-color","hidden?","breed","thickness","shape","tie-mode"', con=f)
-     
-     
+
+
      close(f)
    }
 
